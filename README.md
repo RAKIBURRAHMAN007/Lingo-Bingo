@@ -24,5 +24,58 @@ Lingo Bingo is a vocabulary learning application designed to make language acqui
 5. react-countup
 6. axios
 7. animate.css
-   
+
+For the **Lingo Bingo** project, here’s how you can add the guidelines to run the project locally:
+
+### How to Run Lingo Bingo Locally
+
+1. **Clone the Repository:**
+   Clone the project repository to your local machine using:
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. **Navigate to the Project Directory:**
+   Change into the project folder:
+
+   ```bash
+   cd LingoBingo
+   ```
+
+3. **Install Dependencies:**
+   Install all necessary dependencies using npm:
+
+   ```bash
+   npm install
+   ```
+
+4. **Set Up Environment Variables:**
+   - Create a `.env` file in the root of your project directory.
+   - Add your Firebase credentials in the `.env` file. Example:
+
+     ```bash
+     REACT_APP_FIREBASE_API_KEY=<your-firebase-api-key>
+     REACT_APP_FIREBASE_AUTH_DOMAIN=<your-firebase-auth-domain>
+     REACT_APP_FIREBASE_PROJECT_ID=<your-firebase-project-id>
+     REACT_APP_FIREBASE_STORAGE_BUCKET=<your-firebase-storage-bucket>
+     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<your-firebase-messaging-sender-id>
+     REACT_APP_FIREBASE_APP_ID=<your-firebase-app-id>
+     ```
+
+5. **Start the Development Server:**
+   After installing dependencies and setting up the environment variables, run the following command to start the local development server:
+
+   ```bash
+   npm start
+   ```
+
+   The app will be accessible at [http://localhost:3000](http://localhost:3000).
+
+### Additional Information:
+- **Authentication Setup:** Ensure Firebase authentication is properly configured for Google sign-in.
+- **Profile Management:** Set up the ability to manage user profiles by linking the Firebase authentication to update and view details such as name and photo.
+- **Pronunciation Support:** Ensure the audio feature is properly integrated to pronounce vocabulary words.
+
+Once everything is set up, you should be able to run the project on your local machine!
 
